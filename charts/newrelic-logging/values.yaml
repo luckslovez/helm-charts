@@ -239,3 +239,9 @@ daemonSet:
 # into the plugin.source attribute.
 # Can be set as a global: global.lowDataMode
 # lowDataMode: false
+
+# When depoying in an openshift environment, install newrelic-logging scc by default 
+openshift:
+  enabled: false
+  scc:
+    enabled: true
